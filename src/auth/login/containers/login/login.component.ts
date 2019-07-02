@@ -9,7 +9,6 @@ import { AuthService} from '../../../shared/services/auth/auth.service';
     selector: 'login',
     template: `
         <div>
-          Login
           <auth-form (submitted)="loginUser($event)">
             <h1>Login</h1>
             <a routerLink="/auth/register">Not Registered?</a>

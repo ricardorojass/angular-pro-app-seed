@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
     selector: 'register',
     template: `
         <div>
-          Register
           <auth-form (submitted)="registerUser($event)">
             <h1>Register</h1>
             <a routerLink="/auth/login">Already have an account?</a>
