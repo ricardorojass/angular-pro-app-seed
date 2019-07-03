@@ -10,6 +10,7 @@ import { ListItemComponent } from './components/list-item/list-item.component';
 
 // Services
 import { MealsService } from './services/meals/meals.service';
+import { WorkoutsService } from './services/workouts/workouts.service';
 
 @NgModule({
   imports: [
@@ -30,6 +31,7 @@ export class SharedModule {
       ngModule: SharedModule,
       providers: [
         MealsService,
+        WorkoutsService,
       ]
     }
   }
