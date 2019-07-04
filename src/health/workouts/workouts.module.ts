@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 
 // Components
 import { WorkoutFormComponent } from './components/workout-form/workout-form.component';
+import { WorkoutTypeComponent } from './components/workout-type/workout-type.component';
 
 // Containers
 import { WorkoutsComponent } from './containers/workouts/workouts.component';
@@ -29,6 +30,7 @@ export const ROUTES: Routes = [
     WorkoutsComponent,
     WorkoutComponent,
     WorkoutFormComponent,
+    WorkoutTypeComponent,
   ],
   providers: []
 })
