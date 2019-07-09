@@ -13,7 +13,8 @@ import { ScheduleService } from '../../../shared/services/schedule/schedule.serv
   template: `
     <div class="schedule">
       <schedule-calendar
-        [date]="date$ | async">
+        [date]="date$ | async"
+        (change)="changeDate($event)">
       </schedule-calendar>
     </div>
   `
@@ -27,6 +28,10 @@ export class ScheduleComponent implements OnInit, OnDestroy {
     private scheduleService: ScheduleService,
     private store: Store,
     ) {}
+
+  changeDate(date: Date) {
+    this.scheduleService.updateDate(date);
+  }
 
   ngOnInit() {
     this.date$ = this.store.select('date');
